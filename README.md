@@ -5,6 +5,8 @@ build:
 
      docker build . -t sim-app
 
+If you have trouble about buildkit, delete the `--mount=type=cache,target=/root/.npm` strings and try again
+
 run:
 
      docker run -it -p 3001:3001 sim-app
