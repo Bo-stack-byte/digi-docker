@@ -22,6 +22,7 @@ CMD ["/bin/bash", "-c", "npm start > stdout.txt" ]
 
 # build:
 #     docker build . -t sim-app
+# If you have trouble with buildkit, delete `--mount=type=cache,target=/root/.npm` and try again 
 # run:
 #     docker run -it -p 3001:3001 sim-app
 # then go to http://localhost:3001/
