@@ -4,7 +4,9 @@ EXPOSE 3001
 WORKDIR /app
 RUN git clone https://github.com/Bo-stack-byte/card-ui /app/ui
 RUN git clone https://github.com/danweber/tcg-rules-simulator /app/server
-RUN curl -o /app/server/starters.json https://raw.githubusercontent.com/TakaOtaku/Digimon-Card-App/main/src/assets/cardlists/DigimonCards.json
+RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/Digimon-Card-App/main/src/assets/cardlists/DigimonCards.json
+
+COPY ./translate.txt /app/server/translate.txt
 
 WORKDIR /app/server
 RUN  --mount=type=cache,target=/root/.npm  npm install
@@ -26,4 +28,3 @@ CMD ["/bin/bash", "-c", "npm start > stdout.txt" ]
 # run:
 #     docker run -it -p 3001:3001 sim-app
 # then go to http://localhost:3001/
-

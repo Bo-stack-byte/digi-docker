@@ -1,0 +1,12 @@
+digivolution evolution
+Digivolution Evolution
+digivolve evolve
+Digivolve Evolve
+Digivolving Evolving
+digivolving evolving
+digimon monster
+Digimon Monster
+DIGIMON MONSTER
+[When Attacking] When this Monster attacks	[Your Turn] When this Monster attacks
+＜Vortex＞	At the end of your turn, this Monster may attack an opponent's Monster. With this effect, it can attack the turn it was played.
+＜Barrier＞	When this Digimon would be deleted in battle, by trashing the top card of your security stack, prevent that deletion
