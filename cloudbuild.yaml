@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      export DOCKER_BUILDKIT=1
+      docker build -tgcr.io/$PROJECT/$RELEASE:latest -f Dockerfile .
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT/$RELEASE:latest']
+
