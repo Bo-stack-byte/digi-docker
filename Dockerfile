@@ -8,7 +8,7 @@ RUN git clone https://github.com/Bo-stack-byte/card-ui /app/ui
 RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/Digimon-Card-App/main/src/assets/cardlists/DigimonCards.json
 
 COPY ./translate.txt /app/server/translate.txt
-COPY ./index.ejs /app/server/view/index.ejs
+COPY ./index.ejs /app/server/views/index.ejs
 
 WORKDIR /app/server
 RUN  --mount=type=cache,target=/root/.npm  npm install
