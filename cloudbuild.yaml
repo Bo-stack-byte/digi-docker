@@ -5,7 +5,7 @@ steps:
     - '-c'
     - |
       export DOCKER_BUILDKIT=1
-      docker build -tgcr.io/$PROJECT/$RELEASE:latest -f Dockerfile .
+      docker build -tgcr.io/alpine-fin-438723-d8/digi-visualizer:latest -f Dockerfile .
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT/$RELEASE:latest']
+  args: ['push', 'gcr.io/alpine-fin-438723-d8/digi-visualizer:latest']
 
