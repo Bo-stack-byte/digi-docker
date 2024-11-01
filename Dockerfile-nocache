@@ -2,7 +2,7 @@ FROM node:21
 EXPOSE 3001
 
 WORKDIR /app
-RUN pwd
+RUN ls /tmp
 RUN git clone https://github.com/Bo-stack-byte/card-creator /app/card-creator
 RUN git clone https://github.com/danweber/tcg-rules-simulator /app/server
 RUN git clone https://github.com/Bo-stack-byte/card-ui /app/ui
@@ -10,6 +10,10 @@ RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/D
 
 COPY ./translate.txt /app/server/translate.txt
 COPY ./index.ejs /app/server/views/index.ejs
+
+WORKDIR /app/ui
+CMD cp favicon.ico icon.png /app/server/build
+CMD cp favicon.ico /app/server/public
 
 WORKDIR /app/server
 RUN npm install
