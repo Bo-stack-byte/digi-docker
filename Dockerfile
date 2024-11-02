@@ -11,10 +11,6 @@ RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/D
 COPY ./translate.txt /app/server/translate.txt
 COPY ./index.ejs /app/server/views/index.ejs
 
-WORKDIR /app/ui
-CMD cp favicon.ico icon.png /app/server/build
-CMD cp favicon.ico /app/server/public
-
 WORKDIR /app/server
 RUN  --mount=type=cache,target=/root/.npm  npm install
 RUN  --mount=type=cache,target=/root/.npm  npm install -g typescript
@@ -28,6 +24,12 @@ WORKDIR /app/card-creator
 RUN npm install
 RUN npm run build
 RUN mv /app/card-creator/build /app/server/build-cc
+
+WORKDIR /app/ui/public
+RUN cp favicon.ico icon.png /app/server/build
+RUN cp favicon.ico /app/server/public
+RUN ls -al /app/server/public/
+RUN ls -al /app/server/build/
 
 WORKDIR /app/server/models
 RUN tsc
