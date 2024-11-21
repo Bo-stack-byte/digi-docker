@@ -8,5 +8,8 @@ digimon monster
 Digimon Monster
 DIGIMON MONSTER
 [When Attacking] When this Monster attacks	[Your Turn] When this Monster attacks
+FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Vortex＞	At the end of your turn, this Monster may attack an opponent's Monster. With this effect, it can attack the turn it was played.
+＜Blitz＞	This Monster may attack
+＜Raid＞	When this Monster attacks, you may switch the target of attack to 1 of your opponent's unsuspended Monster with the highest DP
 ＜Barrier＞	When this Digimon would be deleted in battle, by trashing the top card of your security stack, prevent that deletion
