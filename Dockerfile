@@ -2,10 +2,10 @@ FROM node:21
 EXPOSE 3001
 
 WORKDIR /app
-RUN ls /dev
-RUN git clone https://github.com/Bo-stack-byte/card-creator /app/card-creator
+RUN ls .
 RUN git clone https://github.com/danweber/tcg-rules-simulator /app/server
 RUN git clone https://github.com/Bo-stack-byte/card-ui /app/ui
+RUN git clone https://github.com/Bo-stack-byte/card-creator /app/card-creator
 RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/Digimon-Card-App/main/src/assets/cardlists/DigimonCards.json
 
 COPY ./translate.txt /app/server/

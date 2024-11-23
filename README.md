@@ -1,5 +1,5 @@
 # digi-docker
-Dockerfile to pull together everyone's pieces
+Dockerfile to pull together everyone's pieces to get a simulator running. Can deploy to google-cloud.
 
 build:
 
