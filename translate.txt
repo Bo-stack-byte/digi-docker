@@ -7,6 +7,8 @@ digivolving evolving
 digimon monster
 Digimon Monster
 DIGIMON MONSTER
+Digi-Egg Egg
+Security A.	Security Attack
 [When Attacking] When this Monster attacks	[Your Turn] When this Monster attacks
 FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Vortex＞	At the end of your turn, this Monster may attack an opponent's Monster. With this effect, it can attack the turn it was played.
@@ -25,4 +27,7 @@ FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Digi-Burst 2＞	By trashing 2 of this Monster's evolution cards, activate the effect below
 ＜Digi-Burst 3＞	You may trash 3 of this Monster's evolution cards to activate the effect below
 ＜Digi-Burst 4＞	You may trash 4 of this Monster's evolution cards to activate the effect below
+＜Mind Link＞	Place this card
+＜Fortitude＞	When this Monster with evolution cards is deleted, play this card without paying the cost
+＜Decoy ([Puppet] trait)＞	When your other [Puppet] trait Monster would be deleted by an opponent's effect, you may delete this Monster to prevent 1 of those Monster's deletion.
 
