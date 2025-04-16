@@ -1,22 +1,36 @@
 FROM node:21
 EXPOSE 3001
 
+ARG REACT_APP_GOOGLE_CLIENT_ID
+ENV REACT_APP_GOOGLE_CLIENT_ID=$REACT_APP_GOOGLE_CLIENT_ID
+ENV REACT_APP_TEST=abc
+
 WORKDIR /app
+RUN pwd
 RUN ls /tmp
+# changes least often:
 RUN git clone https://github.com/danweber/tcg-rules-simulator /app/server
+# changes somewhat often:
 RUN git clone https://github.com/Bo-stack-byte/card-ui /app/ui
 RUN git clone https://github.com/Bo-stack-byte/card-creator /app/card-creator
+# usually changes daily:
 RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/Digimon-Card-App/main/src/assets/cardlists/DigimonCards.json
 
 COPY ./translate.txt /app/server/
 COPY ./tokens.json /app/server/
 COPY ./index.ejs /app/server/views/
-RUN ls /app/card-creator/server
-RUN ls /app/server
+
 RUN cp /app/card-creator/server/db.js /app/card-creator/server/extra.js /app/server/
+RUN mkdir -p /app/server/plugins
+RUN mkdir -p /app/server/plugins/creator/
+
+#RUN cp /app/card-creator/server/package.json /app/server/plugins/creator/package.json
+COPY ./ccc.json /app/server/plugins/creator/package.json
 
 WORKDIR /app/server
-RUN  --mount=type=cache,target=/root/.npm  npm install
+# no longer install
+RUN  --mount=type=cache,target=/root/.npm  npm run setup
+RUN ls /app/server/plugins/creator/
 RUN  --mount=type=cache,target=/root/.npm  npm install -g typescript
 
 WORKDIR /app/ui
@@ -37,6 +51,8 @@ RUN ls -al /app/server/build/
 
 WORKDIR /app/server/models
 RUN tsc
+RUN ls -alR .
+RUN cp -p dist/*.js .
 CMD ["/bin/bash", "-c", "npm start > stdout.txt" ]
 
 

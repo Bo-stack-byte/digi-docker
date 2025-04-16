@@ -9,7 +9,15 @@ Digimon Monster
 DIGIMON MONSTER
 Digi-Egg Egg
 Security A.	Security Attack
+s or this evolved	s, or this evolved
+If it is a black card, add it to your hand.	Add 1 black card among them to the hand.
 [When Attacking] When this Monster attacks	[Your Turn] When this Monster attacks
+there're	there are
+.While	.\nWhile
+.When	.\nWhen
+When DNA	If DNA
+that have	with
+Monster and Tamers	Monster or Tamers
 FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Vortex＞	At the end of your turn, this Monster may attack an opponent's Monster. With this effect, it can attack the turn it was played.
 ＜Blitz＞	This Monster may attack
@@ -20,14 +28,18 @@ FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Save＞	 You may place this card under one of your Tamers
 ＜Collision＞	 While the attacking monster is this monster, all of your opponent's Monster gain ＜Blocker＞, and must block if possible
 ＜Collision2＞	 While the attacking monster is this monster, all of your opponent's Monster gain ＜Blocker＞
-＜Digisorption -3＞	When one of your Monsters would evolve into this card from your hand, by suspending 1 of your Monster, reduce the memory cost of the evolution by 3
-＜Digisorption -2＞	When one of your Monsters would evolve into this card from your hand, by suspending 1 of your Monster, reduce the memory cost of the evolution by 2
-＜Digisorption -1＞	When one of your Monsters would evolve into this card from your hand, by suspending 1 of your Monster, reduce the memory cost of the evolution by 1
-＜Digi-Burst 1＞	You may trash 1 of this Monster's evolution card to activate the effect below
+＜Digisorption -(.*)＞	When one of your Monsters would evolve into this card from your hand, by suspending 1 of your Monster, reduce the memory cost of the evolution by $1
+＜Digi-XXXXXXXBurst 1＞	You may trash 1 of this Monster's evolution cards to activate the effect below
+＜Digi-Burst 1＞	By trashing 1 of this Monster's evolution cards, activate the effect below
 ＜Digi-Burst 2＞	By trashing 2 of this Monster's evolution cards, activate the effect below
 ＜Digi-Burst 3＞	You may trash 3 of this Monster's evolution cards to activate the effect below
 ＜Digi-Burst 4＞	You may trash 4 of this Monster's evolution cards to activate the effect below
-＜Mind Link＞	Place this card
+＜XXXDelay＞	bbcy trashing this card on a turn after it was placed, activate the effect below
+＜Mind Link＞	Place this tamer 
 ＜Fortitude＞	When this Monster with evolution cards is deleted, play this card without paying the cost
-＜Decoy ([Puppet] trait)＞	When your other [Puppet] trait Monster would be deleted by an opponent's effect, you may delete this Monster to prevent 1 of those Monster's deletion.
-
+＜Decoy \((.*) trait\)＞	When your other $1 trait Monster would be deleted by an opponent's effect, you may delete this Monster to prevent 1 of those Monster's deletion.
+＜Decode \((.*)\)＞	When this Monster would leave the battle area other than in battle, you may play 1 $1 Monster card from its evolution cards without paying the cost
+frgmentnottestetd yet
+＜Fragment \((.*)\)＞	When this Monster would be deleted, by trashing $1 of this Monster's evolution cards, it isn't deleted.
+＜Partition \((.*) \+ (.*)\)＞	When this Monster with 1 $1 and 1 $2 card in its evolution cards would leave the battle area other than in battle or by your own effects, you may play 1 $1 and 1 $2 card from this Monster's evolution cards without paying the cost.
+recycle bin	trash
