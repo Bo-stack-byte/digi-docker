@@ -1,3 +1,4 @@
+＞ ([A-Z])	＞. $1
 digivolution evolution
 Digivolution Evolution
 digivolve evolve
@@ -16,8 +17,11 @@ there're	there are
 .While	.\nWhile
 .When	.\nWhen
 When DNA	If DNA
+] or [	]/[
+], [	]/[
 that have	with
 Monster and Tamers	Monster or Tamers
+[Main] effects.	[Main] effect.
 FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Vortex＞	At the end of your turn, this Monster may attack an opponent's Monster. With this effect, it can attack the turn it was played.
 ＜Blitz＞	This Monster may attack
@@ -25,9 +29,10 @@ FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Barrier＞	When this Monster would be deleted in battle, by trashing the top card of your security stack, prevent that deletion
 ＜Scapegoat＞	 When this Monster would be deleted other than by your effects, by deleting 1 of your other Monster, prevent that deletion
 ＜Evade＞	 When this Monster would be deleted, you may suspend it to prevent that deletion
-＜Save＞	 You may place this card under one of your Tamers
+＜Save＞	You may place this card under one of your Tamers
 ＜Collision＞	 While the attacking monster is this monster, all of your opponent's Monster gain ＜Blocker＞, and must block if possible
 ＜Collision2＞	 While the attacking monster is this monster, all of your opponent's Monster gain ＜Blocker＞
+ABC              (When one of your Monster evolves into this card from your hand, you may suspend 1 of your Monster to reduce the memory cost of the evolution by 2)
 ＜Digisorption -(.*)＞	When one of your Monsters would evolve into this card from your hand, by suspending 1 of your Monster, reduce the memory cost of the evolution by $1
 ＜Digi-XXXXXXXBurst 1＞	You may trash 1 of this Monster's evolution cards to activate the effect below
 ＜Digi-Burst 1＞	By trashing 1 of this Monster's evolution cards, activate the effect below
@@ -38,8 +43,9 @@ FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Mind Link＞	Place this tamer 
 ＜Fortitude＞	When this Monster with evolution cards is deleted, play this card without paying the cost
 ＜Decoy \((.*) trait\)＞	When your other $1 trait Monster would be deleted by an opponent's effect, you may delete this Monster to prevent 1 of those Monster's deletion.
-＜Decode \((.*)\)＞	When this Monster would leave the battle area other than in battle, you may play 1 $1 Monster card from its evolution cards without paying the cost
+＜Decode \((.*)\)＞	When this Monster would leave the battle area other than in battle, you may play 1 $1 Monster card from this Monster's evolution cards without paying the cost
 frgmentnottestetd yet
 ＜Fragment \((.*)\)＞	When this Monster would be deleted, by trashing $1 of this Monster's evolution cards, it isn't deleted.
-＜Partition \((.*) \+ (.*)\)＞	When this Monster with 1 $1 and 1 $2 card in its evolution cards would leave the battle area other than in battle or by your own effects, you may play 1 $1 and 1 $2 card from this Monster's evolution cards without paying the cost.
+＜Partition \((.*) \+ (.*)\)＞	When this Monster with 1 $1 and 1 $2 card in its evolution cards would leave the battle area other than in battle or by your effects, you may play 1 $1 and 1 $2 card from this Monster's evolution cards without paying the cost.
+＜Partition \((.*) \& (.*)\)＞	When this Monster with 1 $1 and 1 $2 card in its evolution cards would leave the battle area other than in battle or by your effects, you may play 1 $1 and 1 $2 card from this Monster's evolution cards without paying the cost.
 recycle bin	trash

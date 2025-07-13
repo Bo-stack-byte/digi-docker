@@ -14,7 +14,8 @@ RUN git clone https://github.com/danweber/tcg-rules-simulator /app/server
 RUN git clone https://github.com/Bo-stack-byte/card-ui /app/ui
 RUN git clone https://github.com/Bo-stack-byte/card-creator /app/card-creator
 # usually changes daily:
-RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/Digimon-Card-App/main/src/assets/cardlists/DigimonCards.json
+# RUN curl -o /app/server/cards.json https://raw.githubusercontent.com/TakaOtaku/Digimon-Cards/main/src/assets/cardlists/DigimonCards.json
+COPY ./cards.json /app/server/
 
 COPY ./translate.txt /app/server/
 COPY ./tokens.json /app/server/
