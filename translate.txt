@@ -1,4 +1,6 @@
 ＞ ([A-Z])	＞. $1
+XXX(.{1,20}) any XXXnumber of (.{1,200}) of 1 of (.{1,80})(\.| and)(.*)	Choose 1 $3. $1 any number of $2 of it$4$5
+XXXX(\S*) any number of (.*?) of 1 of (.*?) and (.*)	Choose 1 of $3. $1 any number of $2 of it and $4
 digivolution evolution
 Digivolution Evolution
 digivolve evolve
@@ -9,19 +11,24 @@ digimon monster
 Digimon Monster
 DIGIMON MONSTER
 Digi-Egg Egg
-Security A.	Security Attack
+Security A\.	Security Attack
 s or this evolved	s, or this evolved
 If it is a black card, add it to your hand.	Add 1 black card among them to the hand.
-[When Attacking] When this Monster attacks	[Your Turn] When this Monster attacks
+\[When Attacking\] When this Monster attacks	[Your Turn] When this Monster attacks
 there're	there are
-.While	.\nWhile
-.When	.\nWhen
+\.While	.\nWhile
+\.When	.\nWhen
 When DNA	If DNA
-] or [	]/[
-], [	]/[
+\] or \[	]/[
+\], \[	]/[
 that have	with
 Monster and Tamers	Monster or Tamers
-[Main] effects.	[Main] effect.
+card, choose any number of your opponent's	card, pool all of your opponent's
+The chosen cards' (play costs) must add up to (\d+) or less.	Choose any number of Monster or Tamers whose combined $1 are less than or equal to $2 from the pool.
+Choose any number of your opponent's Monster and/or Tamers whose combined (play costs) are less than or equal to the (play cost) of 1 of your Monster with (\[.*?\]).in its name	Choose 1 of your Monster with $3 in its name. Choose any number of your opponent's Monster or Tamers whose combined $1 are less than or equal to the $2 of it
+all of the chosen cards	them
+the chosen cards	them
+\[Main\] effects.	[Main] effect.
 FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Vortex＞	At the end of your turn, this Monster may attack an opponent's Monster. With this effect, it can attack the turn it was played.
 ＜Blitz＞	This Monster may attack
@@ -32,7 +39,6 @@ FHFHFHFHFHF	 Make sure the below is pre-translated.
 ＜Save＞	You may place this card under one of your Tamers
 ＜Collision＞	 While the attacking monster is this monster, all of your opponent's Monster gain ＜Blocker＞, and must block if possible
 ＜Collision2＞	 While the attacking monster is this monster, all of your opponent's Monster gain ＜Blocker＞
-ABC              (When one of your Monster evolves into this card from your hand, you may suspend 1 of your Monster to reduce the memory cost of the evolution by 2)
 ＜Digisorption -(.*)＞	When one of your Monsters would evolve into this card from your hand, by suspending 1 of your Monster, reduce the memory cost of the evolution by $1
 ＜Digi-XXXXXXXBurst 1＞	You may trash 1 of this Monster's evolution cards to activate the effect below
 ＜Digi-Burst 1＞	By trashing 1 of this Monster's evolution cards, activate the effect below
@@ -49,3 +55,6 @@ frgmentnottestetd yet
 ＜Partition \((.*) \+ (.*)\)＞	When this Monster with 1 $1 and 1 $2 card in its evolution cards would leave the battle area other than in battle or by your effects, you may play 1 $1 and 1 $2 card from this Monster's evolution cards without paying the cost.
 ＜Partition \((.*) \& (.*)\)＞	When this Monster with 1 $1 and 1 $2 card in its evolution cards would leave the battle area other than in battle or by your effects, you may play 1 $1 and 1 $2 card from this Monster's evolution cards without paying the cost.
 recycle bin	trash
+＜Training＞	[Main] by suspending this Monster, place your deck's top card face down as this Monster's bottom evolution card. This effect can also activate in the breeding area.
+＜Training-OLD＞	In the main phase, by suspending this Monster, place your deck's top card face down as this Monster's bottom evolution card. This effect can also activate in the breeding area.
+In the main phase,	[Main]
